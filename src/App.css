@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 550px;
+  height: 868px;
+  top: 53px;
+  background: #23252C;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-image {
+  position: absolute;
+  width: 317px;
+  height: 317px;
+  left: 116px;
+  top: 44px;
+  background-image: url('../profile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
 }
+
+.card-content {
+  position: absolute;
+  width: 317px;
+  height: 399px;
+  left: 116px;
+  top: 361px;
+  background: #1A1B21;
+}
+
+
+.card-title {
+  height: 15.81px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.card-profession {
+  height: 14.19px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12.8px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #F3BF99;
+}
+
+.card-website {
+  height: 16px;
+  left: 161px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.24px;
+  line-height: 150%;
+
+  /* identical to box height, or 15px */
+  text-align: center;
+
+  color: #F5F5F5;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+
+}
+
+.card-buton-emaitl {
+  width: 115px;
+  height: 34px;
+  margin-right: 5px;
+
+  /* white */
+  background: #FFFFFF;
+
+  /* gray/300 */
+
+  box-sizing: border-box;
+
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.card-button-linked {
+  width: 115px;
+  height: 34px;
+  margin-left: 5px;
+
+  background: #5093E2;
+
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+/* button:focus {
+  outline: none;
+} */
+
+.card-information {
+  width: 247px;
+  height: 201px;
+  margin: 0 auto;
+}
+
+.card-information h3 {
+  width: 242.71px;
+  height: 21px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+
+  /* or 24px */
+
+  color: #F5F5F5;
+}
+
+.card-information p {
+  width: 247px;
+  height: 61px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.24px;
+  line-height: 150%;
+
+  /* or 15px */
+
+  color: #DCDCDC;
+}
+
+.card-social-icons {
+  position: absolute;
+  width: 317px;
+  height: 64px;
+  left: 116px;
+  top: 760px;
+  background: #161619;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-social-icons svg {
+  margin: 10px;
+  background: #918E9B;
+}
+
